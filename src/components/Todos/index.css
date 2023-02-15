@@ -1,0 +1,8 @@
+.todo__container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.todo__list {
+  list-style: none;
+}
