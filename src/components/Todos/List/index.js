@@ -5,8 +5,8 @@ const List = (props) => {
 
   return (
     <>
-      {tasks.map((task, index) => (
-        <Task key={index} {...task} />
+      {tasks.map(({ title, id }) => (
+        <Task key={id} title={title} />
       ))}
     </>
   );

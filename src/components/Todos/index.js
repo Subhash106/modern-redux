@@ -1,15 +1,15 @@
 import "./index.css";
 import List from "./List";
+import { useFetchTodosQuery, useFetchUsersQuery } from "../../store/api";
 
 const TodoList = () => {
-  const tasks = [
-    { title: "Task title 1", description: "Task description 1" },
-    { title: "Task title 2", description: "Task description 2" },
-  ];
+  const { data: todos = [] } = useFetchTodosQuery();
+
   return (
     <div className="todo__container">
+      <p>Number of todos fetched: {todos.length}</p>
       <ul className="todo__list">
-        <List tasks={tasks} />
+        <List tasks={todos} />
       </ul>
     </div>
   );

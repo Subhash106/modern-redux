@@ -1,0 +1,13 @@
+.task {
+  padding: 1rem;
+  box-shadow: 0 1rem 2rem rgba(000, 000, 000, 0.15);
+  border-radius: 3px;
+}
+
+.task:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.task__title {
+  font-size: 1.8rem;
+}

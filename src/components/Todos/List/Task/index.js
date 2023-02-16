@@ -1,9 +1,10 @@
+import "./task.css";
+
 const Task = (props) => {
-  const { title, description } = props;
+  const { title } = props;
   return (
     <div className="task">
-      <h2 className="task__title">{title}</h2>
-      <div className="task__description">{description}</div>
+      <p className="task__title">{title}</p>
     </div>
   );
 };

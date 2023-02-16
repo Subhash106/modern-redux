@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 function Counter(props) {
   return (
     <div>
+      <h1>Counter 1</h1>
       <h2>Count: {props.count}</h2>
       <button onClick={props.increment}>Increment</button>
       <button onClick={props.decrement}>Decrement</button>
